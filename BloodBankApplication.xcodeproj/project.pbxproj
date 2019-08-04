@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8800C2BC2259511300F37AEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8800C2BB2259511300F37AEE /* HomeViewController.swift */; };
+		880BBDB622691F320090AC5E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880BBDB522691F320090AC5E /* EditProfileViewController.swift */; };
+		880BBDB822691F720090AC5E /* DonorSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880BBDB722691F720090AC5E /* DonorSignupViewController.swift */; };
+		881359FA22DE1545003CB93B /* bloodRequestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881359F922DE1545003CB93B /* bloodRequestClass.swift */; };
+		8815AB2522D378E400E1070B /* UserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8815AB2422D378E400E1070B /* UserClass.swift */; };
+		881CB2FB2257E17000251C4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 881CB2FA2257DF6000251C4B /* GoogleService-Info.plist */; };
+		8826052722D6027400610550 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826052622D6027400610550 /* MoreTableViewController.swift */; };
+		8826052922D6179300610550 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8826052822D6179300610550 /* ProfileTableViewController.swift */; };
+		88869590227DADE700268490 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8886958F227DADE700268490 /* CustomImageView.swift */; };
+		8892ED2D22EA07BC006DD6B0 /* ChatUserClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8892ED2C22EA07BC006DD6B0 /* ChatUserClass.swift */; };
+		889A4BED22396BD30076E43D /* DonorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A4BEC22396BD20076E43D /* DonorCell.swift */; };
+		889A4BF022398B0D0076E43D /* DonorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889A4BEF22398B0D0076E43D /* DonorClass.swift */; };
+		889D11BC2259550A0040980B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889D11BB2259550A0040980B /* CustomButton.swift */; };
+		889D11BD225A1BBE0040980B /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881CB2FE22590E5A00251C4B /* Chat.storyboard */; };
+		889D11BE225A1BDC0040980B /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881CB30022590E5A00251C4B /* More.storyboard */; };
+		889D11BF225A1BE00040980B /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881CB2FF22590E5A00251C4B /* Request.storyboard */; };
+		889D11C0225A1BF40040980B /* Donor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881CB2FC22590E5A00251C4B /* Donor.storyboard */; };
+		88CFEA2022E66D6E001B078E /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CFEA1F22E66D6E001B078E /* MessageCell.swift */; };
+		88D41B6F22566BF300666405 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D41B6E22566BF300666405 /* Alert.swift */; };
+		88E034F122E6151000DCE26D /* MessageClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E034F022E6151000DCE26D /* MessageClass.swift */; };
+		88E31012225E4ADB009171D2 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E31011225E4ADB009171D2 /* ChatCell.swift */; };
+		88EE017222DCA38E001D0CAD /* RequestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EE017122DCA38E001D0CAD /* RequestCell.swift */; };
+		88F4C8262222DA620008140F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C8252222DA620008140F /* AppDelegate.swift */; };
+		88F4C82B2222DA620008140F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F4C8292222DA620008140F /* Main.storyboard */; };
+		88F4C82D2222DA620008140F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F4C82C2222DA620008140F /* Assets.xcassets */; };
+		88F4C8302222DA620008140F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F4C82E2222DA620008140F /* LaunchScreen.storyboard */; };
+		88F4C838222D98350008140F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C837222D98350008140F /* CreateAccountViewController.swift */; };
+		88F4C83A222DA7DC0008140F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C839222DA7DC0008140F /* LoginViewController.swift */; };
+		88F4C83C222DBCE30008140F /* DonorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C83B222DBCE30008140F /* DonorsViewController.swift */; };
+		88F4C83E222DBD400008140F /* RequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C83D222DBD400008140F /* RequestsViewController.swift */; };
+		88F4C840222DBD700008140F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C83F222DBD700008140F /* ChatViewController.swift */; };
+		88F4C842222DBD880008140F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C841222DBD880008140F /* MoreViewController.swift */; };
+		88F4C844222DC72D0008140F /* ChatListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C843222DC72D0008140F /* ChatListVC.swift */; };
+		88F4C846222DC77D0008140F /* RequestListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C845222DC77D0008140F /* RequestListVC.swift */; };
+		88F4C848222DC7BC0008140F /* DonorListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C847222DC7BC0008140F /* DonorListVC.swift */; };
+		88F4C84A222DC8DE0008140F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C849222DC8DE0008140F /* ProfileViewController.swift */; };
+		88F4C84C222DC9410008140F /* DiseasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C84B222DC9410008140F /* DiseasesViewController.swift */; };
+		88F4C84E222DC9790008140F /* BloodRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C84D222DC9790008140F /* BloodRequestViewController.swift */; };
+		88F4C850222DD03F0008140F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F4C84F222DD03F0008140F /* CustomTextField.swift */; };
+		DAAD8C52B994255787122A3E /* Pods_BloodBankApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005E500FB08CF4573296EA01 /* Pods_BloodBankApplication.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		005E500FB08CF4573296EA01 /* Pods_BloodBankApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BloodBankApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A11DFE38A49BB63D0079D8B /* Pods-BloodBankApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodBankApplication.release.xcconfig"; path = "Target Support Files/Pods-BloodBankApplication/Pods-BloodBankApplication.release.xcconfig"; sourceTree = "<group>"; };
+		0F8AD23B07251DD56013A3C2 /* Pods-BloodBankApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BloodBankApplication.debug.xcconfig"; path = "Target Support Files/Pods-BloodBankApplication/Pods-BloodBankApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		8800C2BB2259511300F37AEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		880BBDB522691F320090AC5E /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		880BBDB722691F720090AC5E /* DonorSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorSignupViewController.swift; sourceTree = "<group>"; };
+		881359F922DE1545003CB93B /* bloodRequestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bloodRequestClass.swift; sourceTree = "<group>"; };
+		8815AB2422D378E400E1070B /* UserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserClass.swift; sourceTree = "<group>"; };
+		881CB2FA2257DF6000251C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Volumes/VMware Shared Folders/Shared_Folder/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		881CB2FC22590E5A00251C4B /* Donor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Donor.storyboard; sourceTree = "<group>"; };
+		881CB2FE22590E5A00251C4B /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		881CB2FF22590E5A00251C4B /* Request.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Request.storyboard; sourceTree = "<group>"; };
+		881CB30022590E5A00251C4B /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		8826052622D6027400610550 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		8826052822D6179300610550 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		8886958F227DADE700268490 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		8892ED2C22EA07BC006DD6B0 /* ChatUserClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUserClass.swift; sourceTree = "<group>"; };
+		889A4BEC22396BD20076E43D /* DonorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorCell.swift; sourceTree = "<group>"; };
+		889A4BEF22398B0D0076E43D /* DonorClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorClass.swift; sourceTree = "<group>"; };
+		889D11BB2259550A0040980B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		88CFEA1F22E66D6E001B078E /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		88D41B6E22566BF300666405 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		88E034F022E6151000DCE26D /* MessageClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageClass.swift; sourceTree = "<group>"; };
+		88E31011225E4ADB009171D2 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		88EE017122DCA38E001D0CAD /* RequestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCell.swift; sourceTree = "<group>"; };
+		88F4C8222222DA620008140F /* BloodBankApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BloodBankApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F4C8252222DA620008140F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88F4C82A2222DA620008140F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88F4C82C2222DA620008140F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88F4C82F2222DA620008140F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88F4C8312222DA620008140F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F4C837222D98350008140F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		88F4C839222DA7DC0008140F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		88F4C83B222DBCE30008140F /* DonorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorsViewController.swift; sourceTree = "<group>"; };
+		88F4C83D222DBD400008140F /* RequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsViewController.swift; sourceTree = "<group>"; };
+		88F4C83F222DBD700008140F /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		88F4C841222DBD880008140F /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		88F4C843222DC72D0008140F /* ChatListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVC.swift; sourceTree = "<group>"; };
+		88F4C845222DC77D0008140F /* RequestListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestListVC.swift; sourceTree = "<group>"; };
+		88F4C847222DC7BC0008140F /* DonorListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorListVC.swift; sourceTree = "<group>"; };
+		88F4C849222DC8DE0008140F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		88F4C84B222DC9410008140F /* DiseasesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseasesViewController.swift; sourceTree = "<group>"; };
+		88F4C84D222DC9790008140F /* BloodRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodRequestViewController.swift; sourceTree = "<group>"; };
+		88F4C84F222DD03F0008140F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88F4C81F2222DA620008140F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAAD8C52B994255787122A3E /* Pods_BloodBankApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8800C2B622594E4D00F37AEE /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				889D11BB2259550A0040980B /* CustomButton.swift */,
+				88F4C84F222DD03F0008140F /* CustomTextField.swift */,
+				88D41B6E22566BF300666405 /* Alert.swift */,
+				8886958F227DADE700268490 /* CustomImageView.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		8800C2B722594F5500F37AEE /* RequestsFile */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C83D222DBD400008140F /* RequestsViewController.swift */,
+				88F4C845222DC77D0008140F /* RequestListVC.swift */,
+				88EE017122DCA38E001D0CAD /* RequestCell.swift */,
+				881359F922DE1545003CB93B /* bloodRequestClass.swift */,
+			);
+			path = RequestsFile;
+			sourceTree = "<group>";
+		};
+		8800C2B822594FC200F37AEE /* ManageUser */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C839222DA7DC0008140F /* LoginViewController.swift */,
+				88F4C837222D98350008140F /* CreateAccountViewController.swift */,
+				880BBDB522691F320090AC5E /* EditProfileViewController.swift */,
+				880BBDB722691F720090AC5E /* DonorSignupViewController.swift */,
+				8815AB2422D378E400E1070B /* UserClass.swift */,
+			);
+			path = ManageUser;
+			sourceTree = "<group>";
+		};
+		8800C2B92259500000F37AEE /* ChatsFile */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C83F222DBD700008140F /* ChatViewController.swift */,
+				88F4C843222DC72D0008140F /* ChatListVC.swift */,
+				88E31011225E4ADB009171D2 /* ChatCell.swift */,
+				88CFEA1F22E66D6E001B078E /* MessageCell.swift */,
+				88E034F022E6151000DCE26D /* MessageClass.swift */,
+				8892ED2C22EA07BC006DD6B0 /* ChatUserClass.swift */,
+			);
+			path = ChatsFile;
+			sourceTree = "<group>";
+		};
+		8800C2BA2259503300F37AEE /* MoreFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8800C2BB2259511300F37AEE /* HomeViewController.swift */,
+				88F4C841222DBD880008140F /* MoreViewController.swift */,
+				88F4C849222DC8DE0008140F /* ProfileViewController.swift */,
+				88F4C84D222DC9790008140F /* BloodRequestViewController.swift */,
+				88F4C84B222DC9410008140F /* DiseasesViewController.swift */,
+				8826052622D6027400610550 /* MoreTableViewController.swift */,
+				8826052822D6179300610550 /* ProfileTableViewController.swift */,
+			);
+			path = MoreFiles;
+			sourceTree = "<group>";
+		};
+		881CB2FD22590E5A00251C4B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C8292222DA620008140F /* Main.storyboard */,
+				881CB2FC22590E5A00251C4B /* Donor.storyboard */,
+				881CB2FF22590E5A00251C4B /* Request.storyboard */,
+				881CB2FE22590E5A00251C4B /* Chat.storyboard */,
+				881CB30022590E5A00251C4B /* More.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		889A4BEE22398A3D0076E43D /* DonorsFile */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C83B222DBCE30008140F /* DonorsViewController.swift */,
+				88F4C847222DC7BC0008140F /* DonorListVC.swift */,
+				889A4BEC22396BD20076E43D /* DonorCell.swift */,
+				889A4BEF22398B0D0076E43D /* DonorClass.swift */,
+			);
+			path = DonorsFile;
+			sourceTree = "<group>";
+		};
+		88F4C8192222DA610008140F = {
+			isa = PBXGroup;
+			children = (
+				88F4C8242222DA620008140F /* BloodBankApplication */,
+				88F4C8232222DA620008140F /* Products */,
+				F746946A7197C6A5DB577FB1 /* Pods */,
+				AE204F962B37AE122229E891 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88F4C8232222DA620008140F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C8222222DA620008140F /* BloodBankApplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88F4C8242222DA620008140F /* BloodBankApplication */ = {
+			isa = PBXGroup;
+			children = (
+				88F4C8252222DA620008140F /* AppDelegate.swift */,
+				881CB2FD22590E5A00251C4B /* Storyboards */,
+				8800C2BA2259503300F37AEE /* MoreFiles */,
+				8800C2B92259500000F37AEE /* ChatsFile */,
+				8800C2B822594FC200F37AEE /* ManageUser */,
+				889A4BEE22398A3D0076E43D /* DonorsFile */,
+				8800C2B722594F5500F37AEE /* RequestsFile */,
+				8800C2B622594E4D00F37AEE /* CustomUI */,
+				88F4C82C2222DA620008140F /* Assets.xcassets */,
+				88F4C82E2222DA620008140F /* LaunchScreen.storyboard */,
+				88F4C8312222DA620008140F /* Info.plist */,
+				881CB2FA2257DF6000251C4B /* GoogleService-Info.plist */,
+			);
+			path = BloodBankApplication;
+			sourceTree = "<group>";
+		};
+		AE204F962B37AE122229E891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				005E500FB08CF4573296EA01 /* Pods_BloodBankApplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F746946A7197C6A5DB577FB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F8AD23B07251DD56013A3C2 /* Pods-BloodBankApplication.debug.xcconfig */,
+				0A11DFE38A49BB63D0079D8B /* Pods-BloodBankApplication.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88F4C8212222DA620008140F /* BloodBankApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F4C8342222DA620008140F /* Build configuration list for PBXNativeTarget "BloodBankApplication" */;
+			buildPhases = (
+				034E4AE67086B42BCDCBD0E5 /* [CP] Check Pods Manifest.lock */,
+				88F4C81E2222DA620008140F /* Sources */,
+				88F4C81F2222DA620008140F /* Frameworks */,
+				88F4C8202222DA620008140F /* Resources */,
+				269B5B5FE48B89E58440D8FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BloodBankApplication;
+			productName = BloodBankApplication;
+			productReference = 88F4C8222222DA620008140F /* BloodBankApplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88F4C81A2222DA610008140F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Mohammad Arsalan";
+				TargetAttributes = {
+					88F4C8212222DA620008140F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 88F4C81D2222DA610008140F /* Build configuration list for PBXProject "BloodBankApplication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88F4C8192222DA610008140F;
+			productRefGroup = 88F4C8232222DA620008140F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88F4C8212222DA620008140F /* BloodBankApplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88F4C8202222DA620008140F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F4C8302222DA620008140F /* LaunchScreen.storyboard in Resources */,
+				889D11C0225A1BF40040980B /* Donor.storyboard in Resources */,
+				889D11BF225A1BE00040980B /* Request.storyboard in Resources */,
+				889D11BE225A1BDC0040980B /* More.storyboard in Resources */,
+				881CB2FB2257E17000251C4B /* GoogleService-Info.plist in Resources */,
+				88F4C82D2222DA620008140F /* Assets.xcassets in Resources */,
+				889D11BD225A1BBE0040980B /* Chat.storyboard in Resources */,
+				88F4C82B2222DA620008140F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034E4AE67086B42BCDCBD0E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BloodBankApplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		269B5B5FE48B89E58440D8FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BloodBankApplication/Pods-BloodBankApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BloodBankApplication/Pods-BloodBankApplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88F4C81E2222DA620008140F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D41B6F22566BF300666405 /* Alert.swift in Sources */,
+				889D11BC2259550A0040980B /* CustomButton.swift in Sources */,
+				88869590227DADE700268490 /* CustomImageView.swift in Sources */,
+				88F4C850222DD03F0008140F /* CustomTextField.swift in Sources */,
+				88F4C844222DC72D0008140F /* ChatListVC.swift in Sources */,
+				88F4C842222DBD880008140F /* MoreViewController.swift in Sources */,
+				889A4BF022398B0D0076E43D /* DonorClass.swift in Sources */,
+				8800C2BC2259511300F37AEE /* HomeViewController.swift in Sources */,
+				8826052922D6179300610550 /* ProfileTableViewController.swift in Sources */,
+				881359FA22DE1545003CB93B /* bloodRequestClass.swift in Sources */,
+				88F4C83E222DBD400008140F /* RequestsViewController.swift in Sources */,
+				88CFEA2022E66D6E001B078E /* MessageCell.swift in Sources */,
+				8826052722D6027400610550 /* MoreTableViewController.swift in Sources */,
+				88F4C846222DC77D0008140F /* RequestListVC.swift in Sources */,
+				88F4C83A222DA7DC0008140F /* LoginViewController.swift in Sources */,
+				88F4C83C222DBCE30008140F /* DonorsViewController.swift in Sources */,
+				88F4C84A222DC8DE0008140F /* ProfileViewController.swift in Sources */,
+				88E034F122E6151000DCE26D /* MessageClass.swift in Sources */,
+				88F4C838222D98350008140F /* CreateAccountViewController.swift in Sources */,
+				880BBDB822691F720090AC5E /* DonorSignupViewController.swift in Sources */,
+				88E31012225E4ADB009171D2 /* ChatCell.swift in Sources */,
+				88F4C848222DC7BC0008140F /* DonorListVC.swift in Sources */,
+				88EE017222DCA38E001D0CAD /* RequestCell.swift in Sources */,
+				8892ED2D22EA07BC006DD6B0 /* ChatUserClass.swift in Sources */,
+				88F4C840222DBD700008140F /* ChatViewController.swift in Sources */,
+				88F4C8262222DA620008140F /* AppDelegate.swift in Sources */,
+				88F4C84E222DC9790008140F /* BloodRequestViewController.swift in Sources */,
+				88F4C84C222DC9410008140F /* DiseasesViewController.swift in Sources */,
+				889A4BED22396BD30076E43D /* DonorCell.swift in Sources */,
+				880BBDB622691F320090AC5E /* EditProfileViewController.swift in Sources */,
+				8815AB2522D378E400E1070B /* UserClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88F4C8292222DA620008140F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F4C82A2222DA620008140F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88F4C82E2222DA620008140F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88F4C82F2222DA620008140F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88F4C8322222DA620008140F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88F4C8332222DA620008140F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88F4C8352222DA620008140F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8AD23B07251DD56013A3C2 /* Pods-BloodBankApplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BloodBankApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arsalan.BloodBankApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88F4C8362222DA620008140F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A11DFE38A49BB63D0079D8B /* Pods-BloodBankApplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BloodBankApplication/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = arsalan.BloodBankApplication;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88F4C81D2222DA610008140F /* Build configuration list for PBXProject "BloodBankApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F4C8322222DA620008140F /* Debug */,
+				88F4C8332222DA620008140F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88F4C8342222DA620008140F /* Build configuration list for PBXNativeTarget "BloodBankApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F4C8352222DA620008140F /* Debug */,
+				88F4C8362222DA620008140F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88F4C81A2222DA610008140F /* Project object */;
+}
