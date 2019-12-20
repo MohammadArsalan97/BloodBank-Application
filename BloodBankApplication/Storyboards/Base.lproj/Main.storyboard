@@ -25,25 +25,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="o0L-UE-6va">
-                                <rect key="frame" x="307" y="493" width="51" height="31"/>
+                                <rect key="frame" x="308" y="507" width="51" height="31"/>
                                 <color key="onTintColor" red="0.54117647059999996" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="donorSwitchBtn:" destination="Ybx-2h-8aI" eventType="valueChanged" id="SuQ-qL-GPV"/>
                                 </connections>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c6d-HJ-YES" customClass="CustomImageView" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="137.5" y="83.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="WaB-bZ-87n"/>
-                                    <constraint firstAttribute="width" secondItem="c6d-HJ-YES" secondAttribute="height" multiplier="1:1" id="hse-ie-zyV"/>
-                                    <constraint firstAttribute="height" constant="100" id="vE7-S9-oVS"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ISCircle" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sws-kl-cKy" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="211" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="225" width="338" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="bW7-hL-Rhk"/>
                                 </constraints>
@@ -52,43 +41,43 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3yV-T4-m8r" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="266" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="280" width="338" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contact No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KbA-kb-gmZ" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="321" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="335" width="338" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a Donor?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xW-65-xy7">
-                                <rect key="frame" x="19" y="496" width="149" height="25"/>
+                                <rect key="frame" x="19" y="510" width="149" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select blood type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="da9-r5-imk" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="376" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="390" width="338" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ta-dS-XwW">
-                                <rect key="frame" x="19" y="431" width="101" height="25"/>
+                                <rect key="frame" x="19" y="445" width="101" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRm-4B-Hj4">
-                                <rect key="frame" x="238" y="431" width="118" height="25"/>
+                                <rect key="frame" x="239" y="445" width="118" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxV-Rb-9Ah">
-                                <rect key="frame" x="86.5" y="558" width="203" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxV-Rb-9Ah" customClass="CustomButton" customModule="BloodBankApplication" customModuleProvider="target">
+                                <rect key="frame" x="87" y="578" width="203" height="50"/>
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IaY-iy-lwT"/>
@@ -97,10 +86,59 @@
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="continueButton:" destination="Ybx-2h-8aI" eventType="touchUpInside" id="NSN-2I-aay"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBV-q8-WRZ">
+                                <rect key="frame" x="153" y="84" width="70" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p52-V0-5JJ" customClass="CustomImageView" customModule="BloodBankApplication" customModuleProvider="target">
+                                        <rect key="frame" x="5" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="9du-xa-Tsi"/>
+                                            <constraint firstAttribute="width" constant="60" id="S5r-YC-qls"/>
+                                            <constraint firstAttribute="height" constant="60" id="WW4-8k-ECc"/>
+                                            <constraint firstAttribute="height" constant="60" id="uOn-Vx-R9c"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="ISCircle" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-dp-MDy">
+                                        <rect key="frame" x="47" y="47" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="22" id="XV5-8d-t0J"/>
+                                            <constraint firstAttribute="height" constant="22" id="gEf-4d-k3N"/>
+                                        </constraints>
+                                        <state key="normal" image="icons8-camera-30"/>
+                                        <connections>
+                                            <action selector="chooseImage:" destination="Ybx-2h-8aI" eventType="touchUpInside" id="V47-m4-LT3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="leading" secondItem="PBV-q8-WRZ" secondAttribute="leading" constant="5" id="3KG-OT-da7"/>
+                                    <constraint firstAttribute="height" constant="70" id="3PW-75-i24"/>
+                                    <constraint firstAttribute="trailing" secondItem="p52-V0-5JJ" secondAttribute="trailing" constant="5" id="9pg-n9-95Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="p52-V0-5JJ" secondAttribute="bottom" constant="10" id="E1s-QB-AKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="IQa-dp-MDy" secondAttribute="trailing" constant="1" id="Hb7-9F-lcI"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="centerX" secondItem="PBV-q8-WRZ" secondAttribute="centerX" id="LUn-WN-M7t"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="top" secondItem="PBV-q8-WRZ" secondAttribute="top" id="MEI-eD-IHJ"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="leading" secondItem="PBV-q8-WRZ" secondAttribute="leading" constant="5" id="Ofd-ke-d2A"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="top" secondItem="PBV-q8-WRZ" secondAttribute="top" id="QY6-8j-BNi"/>
+                                    <constraint firstAttribute="width" constant="70" id="aKB-by-wbx"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="leading" secondItem="PBV-q8-WRZ" secondAttribute="leading" constant="5" id="dqW-4C-RKW"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="centerX" secondItem="PBV-q8-WRZ" secondAttribute="centerX" id="erD-hn-UmE"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="top" secondItem="PBV-q8-WRZ" secondAttribute="top" id="i0f-kC-le3"/>
+                                    <constraint firstAttribute="bottom" secondItem="IQa-dp-MDy" secondAttribute="bottom" constant="1" id="mkC-G9-ZZB"/>
+                                    <constraint firstItem="p52-V0-5JJ" firstAttribute="top" secondItem="PBV-q8-WRZ" secondAttribute="top" id="tEd-io-puC"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -108,6 +146,7 @@
                             <constraint firstItem="KbA-kb-gmZ" firstAttribute="height" secondItem="3yV-T4-m8r" secondAttribute="height" id="0iG-lx-VDh"/>
                             <constraint firstItem="sws-kl-cKy" firstAttribute="centerX" secondItem="Wtk-lH-lRr" secondAttribute="centerX" id="DnJ-jl-VoD"/>
                             <constraint firstItem="da9-r5-imk" firstAttribute="width" secondItem="KbA-kb-gmZ" secondAttribute="width" id="EEp-xS-zD4"/>
+                            <constraint firstItem="PBV-q8-WRZ" firstAttribute="centerX" secondItem="ZNf-ea-qvE" secondAttribute="centerX" id="Fq8-Yj-BvI"/>
                             <constraint firstItem="o0L-UE-6va" firstAttribute="centerY" secondItem="7xW-65-xy7" secondAttribute="centerY" id="G4e-JU-CtN"/>
                             <constraint firstItem="3yV-T4-m8r" firstAttribute="centerX" secondItem="sws-kl-cKy" secondAttribute="centerX" id="GAK-kY-trN"/>
                             <constraint firstItem="3yV-T4-m8r" firstAttribute="top" secondItem="sws-kl-cKy" secondAttribute="bottom" constant="30" id="MUz-s3-dzx"/>
@@ -123,7 +162,7 @@
                             <constraint firstItem="cRm-4B-Hj4" firstAttribute="trailing" secondItem="da9-r5-imk" secondAttribute="trailing" id="Zfh-W3-XKO"/>
                             <constraint firstItem="0Ta-dS-XwW" firstAttribute="width" secondItem="da9-r5-imk" secondAttribute="width" multiplier="0.3" id="Zfi-nl-v8o"/>
                             <constraint firstItem="bxV-Rb-9Ah" firstAttribute="width" secondItem="da9-r5-imk" secondAttribute="width" multiplier="0.6" id="bwn-fP-uvU"/>
-                            <constraint firstItem="c6d-HJ-YES" firstAttribute="centerX" secondItem="ZNf-ea-qvE" secondAttribute="centerX" id="c6t-O5-j2y"/>
+                            <constraint firstItem="PBV-q8-WRZ" firstAttribute="top" secondItem="Wtk-lH-lRr" secondAttribute="top" constant="20" id="dcx-g5-8cc"/>
                             <constraint firstItem="0Ta-dS-XwW" firstAttribute="height" secondItem="da9-r5-imk" secondAttribute="height" id="fC4-IP-aKS"/>
                             <constraint firstItem="7xW-65-xy7" firstAttribute="leading" secondItem="0Ta-dS-XwW" secondAttribute="leading" id="fdC-kA-Lf4"/>
                             <constraint firstItem="0Ta-dS-XwW" firstAttribute="top" secondItem="da9-r5-imk" secondAttribute="bottom" constant="30" id="hot-z5-cbx"/>
@@ -132,7 +171,6 @@
                             <constraint firstItem="KbA-kb-gmZ" firstAttribute="width" secondItem="3yV-T4-m8r" secondAttribute="width" id="nlf-Mv-lhU"/>
                             <constraint firstItem="3yV-T4-m8r" firstAttribute="height" secondItem="sws-kl-cKy" secondAttribute="height" id="qVo-a7-GsA"/>
                             <constraint firstItem="sws-kl-cKy" firstAttribute="centerY" secondItem="Wtk-lH-lRr" secondAttribute="centerY" multiplier="0.65" id="rGw-gG-7w8"/>
-                            <constraint firstItem="c6d-HJ-YES" firstAttribute="centerY" secondItem="ZNf-ea-qvE" secondAttribute="centerY" multiplier="0.4" id="rd8-mm-FE4"/>
                             <constraint firstItem="cRm-4B-Hj4" firstAttribute="width" secondItem="da9-r5-imk" secondAttribute="width" multiplier="0.35" id="tdn-Zy-HYY"/>
                             <constraint firstItem="da9-r5-imk" firstAttribute="top" secondItem="KbA-kb-gmZ" secondAttribute="bottom" constant="30" id="tln-AO-5q0"/>
                             <constraint firstItem="7xW-65-xy7" firstAttribute="height" secondItem="0Ta-dS-XwW" secondAttribute="height" id="vyL-VD-SHG"/>
@@ -148,14 +186,14 @@
                         <outlet property="dobLbl" destination="cRm-4B-Hj4" id="Ch6-Wf-r9g"/>
                         <outlet property="emailTxt" destination="3yV-T4-m8r" id="D9V-0y-AZ0"/>
                         <outlet property="genderLbl" destination="0Ta-dS-XwW" id="Mgg-hc-Re8"/>
-                        <outlet property="userImageView" destination="c6d-HJ-YES" id="oaf-kk-dKh"/>
+                        <outlet property="userImageView" destination="p52-V0-5JJ" id="1Ti-cd-Zu7"/>
                         <segue destination="2BJ-ib-j7Z" kind="show" identifier="toDonorSignup" id="YjX-AO-djx"/>
                         <segue destination="Lgd-T3-VIc" kind="show" identifier="tabBarSegue" id="xJB-yc-08M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q7b-7k-cTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-356" y="-438"/>
+            <point key="canvasLocation" x="-356" y="-438.53073463268368"/>
         </scene>
         <!--Donor Signup View Controller-->
         <scene sceneID="T7p-2l-6HX">
@@ -166,7 +204,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hemoglobin Level" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A62-VA-cIr" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="211" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="243.5" width="337.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="NKz-1U-Ctq"/>
                                 </constraints>
@@ -175,13 +213,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select date of last donation" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkN-T5-Ke6" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="341" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="373.5" width="337.5" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XUn-VW-mGr" customClass="CustomImageView" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="137.5" y="66.5" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="73.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="aaI-ur-fUP"/>
                                     <constraint firstAttribute="width" secondItem="XUn-VW-mGr" secondAttribute="height" multiplier="1:1" id="yRi-aA-MKR"/>
@@ -191,14 +229,14 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6D-o3-rBa" customClass="CustomButton" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="86" y="539" width="203" height="50"/>
+                                <rect key="frame" x="86" y="561.5" width="203" height="50"/>
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="nYq-Zu-5a4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="DONE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
@@ -208,13 +246,13 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Weight (KG)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L4c-C8-61b" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="276" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="308.5" width="337.5" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select disease (if you've)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFo-Lp-Qm0" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="19" y="406" width="337.5" height="25"/>
+                                <rect key="frame" x="19" y="438.5" width="337.5" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -227,16 +265,16 @@
                             <constraint firstItem="AFo-Lp-Qm0" firstAttribute="height" secondItem="pkN-T5-Ke6" secondAttribute="height" id="8jo-cL-n4l"/>
                             <constraint firstItem="XUn-VW-mGr" firstAttribute="centerX" secondItem="crX-Cj-lL8" secondAttribute="centerX" id="94D-wv-dPj"/>
                             <constraint firstItem="L4c-C8-61b" firstAttribute="centerX" secondItem="A62-VA-cIr" secondAttribute="centerX" id="EcR-YH-BGU"/>
-                            <constraint firstItem="o6D-o3-rBa" firstAttribute="centerY" secondItem="AFo-Lp-Qm0" secondAttribute="centerY" multiplier="1.35" id="LA9-MX-GQk"/>
+                            <constraint firstItem="o6D-o3-rBa" firstAttribute="centerY" secondItem="AFo-Lp-Qm0" secondAttribute="centerY" multiplier="1.3" id="LA9-MX-GQk"/>
                             <constraint firstItem="o6D-o3-rBa" firstAttribute="centerX" secondItem="AFo-Lp-Qm0" secondAttribute="centerX" id="OND-32-uFZ"/>
                             <constraint firstItem="AFo-Lp-Qm0" firstAttribute="centerX" secondItem="pkN-T5-Ke6" secondAttribute="centerX" id="PzA-Zt-MZk"/>
-                            <constraint firstItem="A62-VA-cIr" firstAttribute="centerY" secondItem="Kt5-Me-v0b" secondAttribute="centerY" multiplier="0.65" id="Rzc-nC-6jS"/>
+                            <constraint firstItem="A62-VA-cIr" firstAttribute="centerY" secondItem="Kt5-Me-v0b" secondAttribute="centerY" multiplier="0.7" id="Rzc-nC-6jS"/>
                             <constraint firstItem="L4c-C8-61b" firstAttribute="height" secondItem="A62-VA-cIr" secondAttribute="height" id="Tc4-0l-M1c"/>
                             <constraint firstItem="pkN-T5-Ke6" firstAttribute="height" secondItem="L4c-C8-61b" secondAttribute="height" id="XYa-1f-eYC"/>
                             <constraint firstItem="A62-VA-cIr" firstAttribute="centerX" secondItem="Kt5-Me-v0b" secondAttribute="centerX" id="aRv-Iw-ivB"/>
                             <constraint firstItem="pkN-T5-Ke6" firstAttribute="centerX" secondItem="L4c-C8-61b" secondAttribute="centerX" id="bA4-NU-xB6"/>
                             <constraint firstItem="L4c-C8-61b" firstAttribute="top" secondItem="A62-VA-cIr" secondAttribute="bottom" constant="40" id="eKf-Ol-Ydc"/>
-                            <constraint firstItem="XUn-VW-mGr" firstAttribute="centerY" secondItem="crX-Cj-lL8" secondAttribute="centerY" multiplier="0.35" id="fni-PA-Ld3"/>
+                            <constraint firstItem="XUn-VW-mGr" firstAttribute="centerY" secondItem="crX-Cj-lL8" secondAttribute="centerY" multiplier="0.37" id="fni-PA-Ld3"/>
                             <constraint firstItem="AFo-Lp-Qm0" firstAttribute="width" secondItem="pkN-T5-Ke6" secondAttribute="width" id="k0A-Mg-gQH"/>
                             <constraint firstItem="L4c-C8-61b" firstAttribute="width" secondItem="A62-VA-cIr" secondAttribute="width" id="vrN-BY-kM8"/>
                             <constraint firstItem="A62-VA-cIr" firstAttribute="width" secondItem="crX-Cj-lL8" secondAttribute="width" multiplier="0.9" id="ywi-By-2Ul"/>
@@ -246,6 +284,7 @@
                         <viewLayoutGuide key="safeArea" id="Kt5-Me-v0b"/>
                     </view>
                     <connections>
+                        <outlet property="UserImageView" destination="XUn-VW-mGr" id="3f7-Dd-27E"/>
                         <outlet property="diseaseInput" destination="AFo-Lp-Qm0" id="yk8-Ex-LZg"/>
                         <outlet property="hemoglobinInput" destination="A62-VA-cIr" id="tF2-ZY-2wf"/>
                         <outlet property="lastDonationDateInput" destination="pkN-T5-Ke6" id="4ud-BQ-ffW"/>
@@ -255,7 +294,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJS-fQ-dGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="-523"/>
+            <point key="canvasLocation" x="338" y="-439"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="3c3-JT-aeC">
@@ -307,6 +346,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="SignUpButton:" destination="xrR-m5-YY6" eventType="touchUpInside" id="KVv-Fc-nwe"/>
                                 </connections>
@@ -327,7 +369,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJX-z1-ybk">
-                                <rect key="frame" x="143" y="421" width="50" height="50"/>
+                                <rect key="frame" x="143" y="449.5" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="3xH-WJ-vJW"/>
                                     <constraint firstAttribute="height" constant="50" id="W5q-0G-LBV"/>
@@ -338,7 +380,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGj-rS-rmg">
-                                <rect key="frame" x="295" y="421.5" width="50" height="50"/>
+                                <rect key="frame" x="295" y="450" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="G0e-U2-mec"/>
                                     <constraint firstAttribute="height" constant="50" id="abu-Zg-KpS"/>
@@ -349,7 +391,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-Lg-ISc">
-                                <rect key="frame" x="243" y="416.5" width="2" height="60"/>
+                                <rect key="frame" x="243" y="445" width="2" height="60"/>
                                 <color key="backgroundColor" red="0.54117647059999996" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="2" id="Pwe-kv-Ze1"/>
@@ -385,7 +427,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awX-CL-hbS">
-                                <rect key="frame" x="19" y="436" width="60.5" height="20.5"/>
+                                <rect key="frame" x="19" y="464.5" width="60.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -447,13 +489,13 @@
         <!--Login View Controller-->
         <scene sceneID="YaQ-Ko-Brj">
             <objects>
-                <viewController id="BhX-v1-fKw" customClass="LoginViewController" customModule="BloodBankApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toLogin" id="BhX-v1-fKw" customClass="LoginViewController" customModule="BloodBankApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGm-A2-eMG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rGZ-Wp-ybG" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="22" y="396" width="337.5" height="25"/>
+                                <rect key="frame" x="22" y="418" width="337.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="ukz-eI-KJ9"/>
                                 </constraints>
@@ -462,7 +504,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-sA-4Wu" customClass="CustomButton" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="89.5" y="524.5" width="202.5" height="50"/>
+                                <rect key="frame" x="89.5" y="560" width="202.5" height="50"/>
                                 <color key="backgroundColor" red="0.54117647058823526" green="0.058823529411764705" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gm4-YI-7ea"/>
@@ -472,12 +514,15 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="LogInButton:" destination="BhX-v1-fKw" eventType="touchUpInside" id="Xub-eE-SHQ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJj-xN-MOo" customClass="CustomTextField" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="22" y="331" width="337.5" height="25"/>
+                                <rect key="frame" x="22" y="353" width="337.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="aeD-zO-bUg"/>
                                 </constraints>
@@ -492,7 +537,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-Iv-S8D">
-                                <rect key="frame" x="238.5" y="436" width="121" height="30"/>
+                                <rect key="frame" x="238.5" y="458" width="121" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                 <state key="normal" title="Forgot Password?">
                                     <color key="titleColor" red="0.54117647059999996" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -520,7 +565,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25C-dL-qwB" customClass="CustomButton" customModule="BloodBankApplication" customModuleProvider="target">
-                                <rect key="frame" x="22" y="436" width="55" height="30"/>
+                                <rect key="frame" x="22" y="458" width="55" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Sign up">
                                     <color key="titleColor" red="0.54117647059999996" green="0.027450980390000001" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -556,7 +601,6 @@
                         <viewLayoutGuide key="safeArea" id="VeU-4i-fZT"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ero-tE-DHW"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="EmailTxt" destination="SJj-xN-MOo" id="YTH-VU-8Lz"/>
                         <outlet property="PasswordTxt" destination="rGZ-Wp-ybG" id="xYX-bP-Nv8"/>
@@ -565,26 +609,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJT-dz-Aku" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="25Z-Ix-WuB">
-                    <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sign Up"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3kt-IX-TMK">
-                    <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Already have an account?"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="S3D-TM-zxg">
-                    <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sign Up"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7z4-E2-8VE">
-                    <rect key="frame" x="0.0" y="0.0" width="184" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Already have an account?"/>
-                </button>
             </objects>
             <point key="canvasLocation" x="-1858" y="-438"/>
         </scene>
@@ -649,10 +673,11 @@
     </scenes>
     <resources>
         <image name="bloodcircleWhite" width="90" height="90"/>
+        <image name="icons8-camera-30" width="30" height="30"/>
         <image name="man" width="47" height="47"/>
         <image name="woman" width="47" height="47"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="INH-gn-Bsk"/>
+        <segue reference="GoN-3w-6jG"/>
     </inferredMetricsTieBreakers>
 </document>

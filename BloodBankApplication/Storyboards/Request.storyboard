@@ -30,11 +30,11 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RequestCell" rowHeight="70" id="rIU-i3-qKz" customClass="RequestCell" customModule="BloodBankApplication" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RequestCell" rowHeight="70" id="rIU-i3-qKz" customClass="RequestCell" customModule="BloodBankApplication" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rIU-i3-qKz" id="kLC-uE-eBZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z9h-Fz-WmJ">
@@ -46,7 +46,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arsalan yaseen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="L2s-rv-hiD">
-                                                    <rect key="frame" x="84" y="12" width="279" height="25"/>
+                                                    <rect key="frame" x="84" y="12" width="246" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="vij-Vq-f3j"/>
                                                     </constraints>
@@ -55,7 +55,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1R-r8-Mfz">
-                                                    <rect key="frame" x="84" y="41" width="93" height="22"/>
+                                                    <rect key="frame" x="84" y="41" width="80" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="22" id="m9A-A6-XNF"/>
                                                     </constraints>
@@ -69,7 +69,7 @@
                                                 <constraint firstItem="N1R-r8-Mfz" firstAttribute="centerY" secondItem="kLC-uE-eBZ" secondAttribute="centerY" multiplier="1.5" id="Ip3-3H-Exa"/>
                                                 <constraint firstAttribute="trailing" secondItem="L2s-rv-hiD" secondAttribute="trailing" constant="12" id="Nkv-gO-VIs"/>
                                                 <constraint firstItem="N1R-r8-Mfz" firstAttribute="leading" secondItem="z9h-Fz-WmJ" secondAttribute="trailing" constant="12" id="Nm2-rK-r2m"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="N1R-r8-Mfz" secondAttribute="trailing" constant="190" id="fhv-Z8-6zD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="N1R-r8-Mfz" secondAttribute="trailing" constant="170" id="fhv-Z8-6zD"/>
                                                 <constraint firstItem="z9h-Fz-WmJ" firstAttribute="centerY" secondItem="kLC-uE-eBZ" secondAttribute="centerY" id="tVW-pp-DdB"/>
                                                 <constraint firstItem="L2s-rv-hiD" firstAttribute="leading" secondItem="z9h-Fz-WmJ" secondAttribute="trailing" constant="12" id="wgR-tH-lTt"/>
                                                 <constraint firstItem="L2s-rv-hiD" firstAttribute="centerY" secondItem="kLC-uE-eBZ" secondAttribute="centerY" multiplier="0.7" id="zNe-oV-rUU"/>
@@ -178,12 +178,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-Mo-D83">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-Mo-D83" customClass="CustomImageView" customModule="BloodBankApplication" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="117" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Tp7-CW-cpM"/>
                                     <constraint firstAttribute="width" constant="100" id="gU2-yj-pf8"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ISCircle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bloodtype:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJN-zj-2AY">
                                 <rect key="frame" x="20" y="323" width="83" height="21"/>
@@ -241,7 +244,7 @@
         <scene sceneID="miM-51-fXC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vxS-sc-cRF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Request" id="rjE-E9-biA"/>
+                    <tabBarItem key="tabBarItem" title="Request" image="drop-of-blood-25" id="rjE-E9-biA"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RQx-9g-i1g">
@@ -258,4 +261,7 @@
             <point key="canvasLocation" x="2358" y="-242"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drop-of-blood-25" width="25" height="25"/>
+    </resources>
 </document>

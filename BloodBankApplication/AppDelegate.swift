@@ -8,7 +8,9 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import FirebaseFirestore
+//import FirebaseStorage
 //import FirebaseAuth
 
 @UIApplicationMain
@@ -22,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         database = Firestore.firestore()
-        //checkUserStatus()
+        
+        
+        
         return true
     }
     

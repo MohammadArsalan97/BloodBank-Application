@@ -12,12 +12,14 @@ import Firebase
 
 class CreateAccountViewController: UIViewController {
 
-    private var datePicker : UIDatePicker?
+    //private var datePicker : UIDatePicker?
     var sharedRef = UIApplication.shared.delegate as! AppDelegate
     var selectedgender : String?
     var selectedDate : String?
     
     var userArray = [User]()
+    
+    var uid = Auth.auth().currentUser?.uid
     
 
     
@@ -40,41 +42,56 @@ class CreateAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addDatePicker()
-        tappedGesture()
-        
+        //addDatePicker()
+        //tappedGesture()
+        //createToolbar()
         // setImageInCircle(image: bloodImageView)
         // Do any additional setup after loading the view.
+        showDatePicker()
+    }
+    
+    //-------********************************************------------
+   
+        let datePicker = UIDatePicker()
+    
+        func showDatePicker(){
+            //Formate Date
+            datePicker.datePickerMode = .date
+            
+            //ToolBar
+            let toolbar = UIToolbar();
+            toolbar.sizeToFit()
+            let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donedatePicker));
+            let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+            let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
+            
+            toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+            
+            //Customizations
+            toolbar.barTintColor = .black
+            toolbar.tintColor = .white
+            dobTxt.inputAccessoryView = toolbar
+            dobTxt.inputView = datePicker
+            
+        }
         
-    }
-    
-    
-    
-    func tappedGesture(){
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.viewTapped(gestureRecognizer:)))
-        view.addGestureRecognizer(tapGesture)
-    }
-    
-    @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer){
+        @objc func donedatePicker(){
+            
+            let formatter = DateFormatter()
+            formatter.dateFormat = "dd/MM/yyyy"
+            dobTxt.text = formatter.string(from: datePicker.date)
+            self.view.endEditing(true)
+        }
         
-        view.endEditing(true)
-    }
-    func addDatePicker(){
-        datePicker = UIDatePicker()
-        datePicker?.datePickerMode = .date
-        dobTxt.inputView = datePicker
-        datePicker?.addTarget(self, action: #selector(self.datechanged(datePicker:)), for: .valueChanged)
-    }
+        @objc func cancelDatePicker(){
+            self.view.endEditing(true)
+        }
     
-    @objc func datechanged(datePicker: UIDatePicker){
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/YYYY"
-        
-        //dobTxt.text = dateFormatter.string(from: datePicker.date)
-        selectedDate = dateFormatter.string(from: datePicker.date)
-        dobTxt.text = selectedDate
-        view.endEditing(true)
-    }
+    
+    //-------********************************************------------
+    
+
+
 
     
     
@@ -138,11 +155,24 @@ class CreateAccountViewController: UIViewController {
 //                })
 //            }
 //        }
-        var tempUser = User(name: nameTxt.text!, email: emailTxt.text!, dob: dobTxt.text!, contact: "123456789", bloodtype: "abc", gender: selectedgender!, dateOfLastDonation: "fgh", disease: "jhk", hemoglobinLevel: "lmn", weight: "uvw",password:passwordTxt.text!)
         
-        userArray.append(tempUser)
+        if (nameTxt.text?.isEmpty)! || (emailTxt.text?.isEmpty)! || (dobTxt.text?.isEmpty)! || (passwordTxt.text?.isEmpty)!{
+            //print("some textfield is empty")
+            Alert.showIncompleteFormAlert(on: self)
+            
+        }else{
+            var tempUser = User(userID: "123456789", name: nameTxt.text!.capitalized, email: emailTxt.text!, dob: dobTxt.text!, contact: "123456789", bloodtype: "abc", gender: selectedgender!, dateOfLastDonation: "fgh", disease: "jhk", hemoglobinLevel: "lmn", weight: "uvw",password:passwordTxt.text!)
+            
+            userArray.append(tempUser)
+            print(userArray)
+            
+            self.performSegue(withIdentifier: "toEditProfile", sender: self)
+            
+        }
         
-        self.performSegue(withIdentifier: "toEditProfile", sender: self)
+        
+        
+        
     }
     
     @IBAction func AlredyHaveAnAccountButton(_ sender: Any) {

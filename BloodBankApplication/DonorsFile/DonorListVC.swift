@@ -9,14 +9,21 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseFirestore
+import SDWebImage
 
 class DonorListVC: UIViewController {
     
     var uid = Auth.auth().currentUser?.uid
     var sharedRef = UIApplication.shared.delegate as! AppDelegate
     var DonorDict : [String:Any] = [:]
+    var conversationID = ""
+    
+    
     var donor : Donor?
     
+    
+    //var userId = ""
     var email = ""
     var name = ""
     var contact_no = ""
@@ -27,6 +34,8 @@ class DonorListVC: UIViewController {
     var location = ""
     var weight = ""
     var disease = ""
+    var imageURL = ""
+    var userImage = #imageLiteral(resourceName: "icons8-user-40")
     
 
     override func viewDidLoad() {
@@ -34,11 +43,10 @@ class DonorListVC: UIViewController {
         //getData()
         setUI()
         // Do any additional setup after loading the view.
+        
     }
     
     func setUI() {
-        
-        
         self.emailLbl.text = self.donor?.email
         self.fullNameLbl.text = self.donor?.name
         self.contactNoLbl.text = self.donor?.contact
@@ -49,37 +57,41 @@ class DonorListVC: UIViewController {
         self.dateOfLastDonationLbl.text = self.donor?.dateOfLastDonation
         self.weightLbl.text = self.donor?.weight
         self.bloodDiseasesLbl.text = self.donor?.disease
+        self.imageURL = (self.donor?.imageURL)!
+        
+        let url = URL(string: self.imageURL)
+        userImageiew.sd_setImage(with: url as! URL, placeholderImage: self.userImage)
     }
     
-//    func getData()  {
-//        let userRef = self.sharedRef.database.collection("Users").document(uid!)
-//
-//        userRef.getDocument { (document, error) in
-//            if let document = document, document.exists {
-//                let dataDescription = document.data() as! [String : Any]
-//                print("Document data: \(dataDescription)")
-//
-//
-//
-//
-//            } else {
-//                print("Document does not exist")
-//            }
-//        }
-//    }
-    
-   
-    
     @IBAction func callBtn(_ sender: Any) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tochatSegue" {
+            let destVC = segue.destination as! ChatListVC
+            destVC.navigationItem.title = self.donor?.name
+            destVC.recipientName = self.donor?.name
+            destVC.recipientID = self.donor?.userID
+            destVC.recipientImageUrl = self.donor?.imageURL
+           // destVC.conversationID = self.conversationID
+        }
     }
     
     @IBAction func chatBtn(_ sender: Any) {
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: "Chat", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "toChat") as! ChatListVC
-        
-    self.present(vc, animated: true, completion: nil)
-        
+        self.performSegue(withIdentifier: "tochatSegue", sender: self)
+    }
+    
+    
+    @IBOutlet weak var chatBtnOutlet: UIButton!{
+        didSet{
+            chatBtnOutlet.layer.cornerRadius  = 5
+        }
+    }
+    @IBOutlet weak var callBtnOutlet: UIButton!{
+        didSet{
+            callBtnOutlet.layer.cornerRadius  = 5
+        }
     }
     
     @IBOutlet weak var emailLbl: UILabel!
@@ -101,6 +113,11 @@ class DonorListVC: UIViewController {
     @IBOutlet weak var weightLbl: UILabel!
     
     @IBOutlet weak var bloodDiseasesLbl: UILabel!
+    
+    @IBOutlet weak var userImageiew: CustomImageView!
+    
+    
+    
     
 }
     

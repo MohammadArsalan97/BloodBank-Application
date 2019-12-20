@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 class User {
     
+    var userID : String
     var name : String 
     var email : String
     var dob : String
@@ -21,8 +22,10 @@ class User {
     var hemoglobinLevel : String?
     var weight : String?
     var password : String
+    //var image : UIImage
     
-    init(name: String,email: String,dob:String,contact: String,bloodtype:String,gender:String,dateOfLastDonation:String?,disease:String?,hemoglobinLevel:String?,weight:String?,password:String) {
+    init(userID: String,name: String,email: String,dob:String,contact: String,bloodtype:String,gender:String,dateOfLastDonation:String?,disease:String?,hemoglobinLevel:String?,weight:String?,password:String) {
+        self.userID = userID
         self.name = name
         self.email = email
         self.dob = dob
@@ -34,6 +37,7 @@ class User {
         self.hemoglobinLevel = hemoglobinLevel
         self.weight = weight
         self.password = password
+        //self.image = image
     }
     
     

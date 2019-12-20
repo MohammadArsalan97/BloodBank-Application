@@ -16,7 +16,7 @@ class RequestsViewController: UIViewController {
     
     var uid = Auth.auth().currentUser?.uid
     
-   
+   var userImage = #imageLiteral(resourceName: "icons8-user-40")
     
     var reqBloodDict : [String:Any] = [:]
     
@@ -24,7 +24,9 @@ class RequestsViewController: UIViewController {
     var sharedRef = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+        configureTableView()
+       // getData()
+        retrieveMessages()
         bloodRequestTableView.delegate = self
         bloodRequestTableView.dataSource = self
 
@@ -34,6 +36,40 @@ class RequestsViewController: UIViewController {
    
 
     @IBOutlet weak var bloodRequestTableView: UITableView!
+    
+    func configureTableView()  {
+        bloodRequestTableView.rowHeight = 80.0
+        bloodRequestTableView.estimatedRowHeight = 120.0
+    }
+    
+    func retrieveMessages() {
+        let messageDB = self.sharedRef.database.collection("RequestBlood").addSnapshotListener { querySnapshot, error in
+            guard let snapshot = querySnapshot else {
+                print("Error fetching snapshots: \(error!)")
+                return
+            }
+            
+            snapshot.documentChanges.forEach { diff in
+                if (diff.type == .added) {
+                    var reqBloodUid = diff.document.documentID
+                    self.reqBloodDict = diff.document.data()
+                    print("*************-------------**************")
+                    print(self.reqBloodDict)
+                    let name = self.reqBloodDict["name"] as! String
+                    let gender = self.reqBloodDict["gender"] as! String
+                    let bloodtype = self.reqBloodDict["bloodtype"] as! String
+                    let contact = self.reqBloodDict["contact"] as! String
+                    let date = self.reqBloodDict["date"] as! String
+                    let location = self.reqBloodDict["location"] as! String
+                    let request1 = BloodRequest(name: name, gender: gender, bloodtype: bloodtype, contact: contact, date: date, location: location)
+                    self.bloodReq.append(request1)
+                    print(request1)
+                    self.bloodRequestTableView.reloadData()
+                }
+            }
+        }
+        
+    }
     
     func getData() {
         let userRef = self.sharedRef.database.collection("RequestBlood").getDocuments() { (querySnapshot, err) in
@@ -86,6 +122,7 @@ class RequestsViewController: UIViewController {
         if segue.identifier == "toRequestProfile" {
             let destVC = segue.destination as! RequestListVC
             destVC.request = sender as! BloodRequest
+            destVC.hidesBottomBarWhenPushed = true
             
         }
             
@@ -104,6 +141,7 @@ extension RequestsViewController: UITableViewDataSource,UITableViewDelegate{
         
         cell.bloodRequestNameLbl.text = self.bloodReq[indexPath.row].name
         cell.genderLbl.text = self.bloodReq[indexPath.row].gender
+        cell.bloodRequestImageView.image = self.userImage
         
         
         return cell

@@ -24,7 +24,7 @@ class RequestListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hidesBottomBarWhenPushed = true
         setUI()
     }
     

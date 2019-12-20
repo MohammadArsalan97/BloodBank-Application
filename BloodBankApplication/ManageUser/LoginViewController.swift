@@ -14,11 +14,27 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        checkUserStatus()
+        self.EmailTxt.text = "test2@gmail.com"
+        self.PasswordTxt.text = "123456789"
         self.navigationController?.navigationBar.isHidden = true
         //navigationController?.navigationBar.barTintColor = UIColor.red
         // Do any additional setup after loading the view.
       //  setImageInCircle(image: bloodImageView)
         
+    }
+    func checkUserStatus() {
+        if Auth.auth().currentUser != nil {
+            // User is signed in.
+            // ...
+            self.performSegue(withIdentifier: "tabBarSegue", sender: self)
+            
+            } else {
+                // No user is signed in.
+                // ... toLogin
+                //self.performSegue(withIdentifier: "toLogin", sender: nil)
+                
+            }
     }
     
     
@@ -36,6 +52,8 @@ class LoginViewController: UIViewController {
 //                let vc = self.storyboard?.instantiateViewController(withIdentifier: "toTabBarController") as! HomeViewController
 //                self.present(vc, animated: true, completion: nil)
                 self.performSegue(withIdentifier: "tabBarSegue", sender: self)
+                self.EmailTxt.text = ""
+                self.PasswordTxt.text = ""
             }else{
                // print(error?.localizedDescription)
                 Alert.showErrorAlert(on: self, message: (error?.localizedDescription)!)

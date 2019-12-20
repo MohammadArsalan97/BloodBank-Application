@@ -11,19 +11,24 @@ import UIKit
 
 class Donor {
     
+    var userID: String
     var name : String
     var email : String
     var dob : String
     var contact : String
     var bloodtype : String
     var gender : String
-    var dateOfLastDonation : String?
-    var disease : String?
-    var hemoglobinLevel : String?
-    var weight : String?
+    var dateOfLastDonation : String
+    var disease : String
+    var hemoglobinLevel : String
+    var weight : String
+    var imageURL : String
+    //var image : UIImage
 
     
-    init(name: String,email: String,dob:String,contact: String,bloodtype:String,gender:String,dateOfLastDonation:String?,disease:String?,hemoglobinLevel:String?,weight:String?) {
+    init(userID: String,name: String,email: String,dob:String,contact: String,bloodtype:String,gender:String,dateOfLastDonation:String,disease:String,hemoglobinLevel:String,weight:String,imageURL: String) {
+        
+        self.userID = userID
         self.name = name
         self.email = email
         self.dob = dob
@@ -34,5 +39,7 @@ class Donor {
         self.disease = disease
         self.hemoglobinLevel = hemoglobinLevel
         self.weight = weight
+        self.imageURL = imageURL
+        //self.image = image
     }
 }

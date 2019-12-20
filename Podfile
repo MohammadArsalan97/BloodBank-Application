@@ -6,7 +6,9 @@ target 'BloodBankApplication' do
 
   # Pods for BloodBankApplication
     pod 'Firebase/Core'
+    pod 'Firebase/Storage'
     pod 'Firebase/Auth'
     pod 'Firebase/Firestore'
-
+    pod 'SDWebImage'
+    pod 'SVProgressHUD'
 end

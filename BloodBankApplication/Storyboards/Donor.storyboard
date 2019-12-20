@@ -20,7 +20,7 @@
         <!--Donor List-->
         <scene sceneID="MXf-Va-Awz">
             <objects>
-                <viewController storyboardIdentifier="toDonor" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JS1-x2-RNK" customClass="DonorsViewController" customModule="BloodBankApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toDonor" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JS1-x2-RNK" customClass="DonorsViewController" customModule="BloodBankApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Jf-e2-myj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,11 +29,11 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DonorCell" rowHeight="90" id="H8K-BG-Tq5" customClass="DonorCell" customModule="BloodBankApplication" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DonorCell" rowHeight="70" id="H8K-BG-Tq5" customClass="DonorCell" customModule="BloodBankApplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H8K-BG-Tq5" id="aFG-uP-cti">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MfW-k0-Aiq" customClass="CustomImageView" customModule="BloodBankApplication" customModuleProvider="target">
@@ -56,7 +56,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dD-0W-7VT">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3dD-0W-7VT" customClass="CustomImageView" customModule="BloodBankApplication" customModuleProvider="target">
                                                     <rect key="frame" x="92" y="51" width="14" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="Qpc-CM-PgB"/>
@@ -74,7 +74,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzV-4T-Qib">
-                                                    <rect key="frame" x="315" y="28" width="40" height="40"/>
+                                                    <rect key="frame" x="282" y="28" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="30h-ok-MKM"/>
                                                         <constraint firstAttribute="width" secondItem="LzV-4T-Qib" secondAttribute="height" multiplier="1:1" id="vIw-v0-2Ct"/>
@@ -107,13 +107,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMx-fj-6zt" customClass="RoundButton" customModule="BloodBankApplication" customModuleProvider="target">
+                                <rect key="frame" x="315" y="567" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.54117647059999996" green="0.058823529409999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="aYn-BN-TiS"/>
+                                    <constraint firstAttribute="height" constant="50" id="ahR-p0-Mu0"/>
+                                </constraints>
+                                <state key="normal" title="S"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="ISCircle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchButton:" destination="JS1-x2-RNK" eventType="touchUpInside" id="MxW-rM-XLK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2cC-Dy-yIu" firstAttribute="top" secondItem="yal-Nd-Dvj" secondAttribute="top" id="2Pe-YS-iPd"/>
                             <constraint firstItem="2cC-Dy-yIu" firstAttribute="bottom" secondItem="yal-Nd-Dvj" secondAttribute="bottom" id="RMd-Up-LYa"/>
                             <constraint firstItem="2cC-Dy-yIu" firstAttribute="trailing" secondItem="yal-Nd-Dvj" secondAttribute="trailing" id="gFw-Y4-jhZ"/>
+                            <constraint firstItem="yal-Nd-Dvj" firstAttribute="bottom" secondItem="rMx-fj-6zt" secondAttribute="bottom" constant="50" id="qsd-rS-6d7"/>
                             <constraint firstItem="2cC-Dy-yIu" firstAttribute="leading" secondItem="yal-Nd-Dvj" secondAttribute="leading" id="quT-Yg-x0Z"/>
+                            <constraint firstItem="rMx-fj-6zt" firstAttribute="trailing" secondItem="yal-Nd-Dvj" secondAttribute="trailing" constant="-10" id="rc0-fB-e45"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yal-Nd-Dvj"/>
                     </view>
@@ -121,6 +138,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="donorTableView" destination="2cC-Dy-yIu" id="RXn-81-Rt2"/>
+                        <outlet property="searchBtnOutlet" destination="rMx-fj-6zt" id="IuL-b6-X2l"/>
                         <segue destination="Yj0-fV-FUd" kind="show" identifier="toDonorProfile" id="JsP-zJ-RSr"/>
                     </connections>
                 </viewController>
@@ -157,14 +175,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahv-wV-fUr">
-                                <rect key="frame" x="58.5" y="235" width="33" height="30"/>
+                                <rect key="frame" x="50" y="235" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.54117647059999996" green="0.058823529409999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="d23-Mq-PSl"/>
+                                    <constraint firstAttribute="height" constant="30" id="zNA-oq-GaM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Chat"/>
                                 <connections>
                                     <action selector="chatBtn:" destination="Yj0-fV-FUd" eventType="touchUpInside" id="bFj-Rp-E6J"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLD-aq-V3i">
-                                <rect key="frame" x="285" y="235" width="30" height="30"/>
+                                <rect key="frame" x="275" y="235" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.54117647059999996" green="0.058823529409999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HfP-jX-lvG"/>
+                                    <constraint firstAttribute="width" constant="50" id="ijT-l0-iQX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Call"/>
                                 <connections>
                                     <action selector="callBtn:" destination="Yj0-fV-FUd" eventType="touchUpInside" id="5Dh-0R-Kyi"/>
@@ -368,6 +400,8 @@
                     <connections>
                         <outlet property="bloodDiseasesLbl" destination="zpE-Pg-2z3" id="prN-1X-E2E"/>
                         <outlet property="bloodTypeLbl" destination="cvp-kx-LKb" id="JWx-0I-u92"/>
+                        <outlet property="callBtnOutlet" destination="KLD-aq-V3i" id="YAP-Z2-wE4"/>
+                        <outlet property="chatBtnOutlet" destination="ahv-wV-fUr" id="MPy-2S-7tL"/>
                         <outlet property="contactNoLbl" destination="bku-fc-PKw" id="gkx-Cv-zBx"/>
                         <outlet property="dateOfLastDonationLbl" destination="Ekh-9c-40A" id="Vt7-Rp-ka1"/>
                         <outlet property="dobLbl" destination="bcA-oK-bYS" id="gHV-V3-rto"/>
@@ -375,12 +409,22 @@
                         <outlet property="fullNameLbl" destination="Sqk-jk-LAl" id="jwY-wq-jhW"/>
                         <outlet property="genderLbl" destination="qsn-5F-qp1" id="A1B-AM-veC"/>
                         <outlet property="locationLbl" destination="prE-8s-ajG" id="jgn-tJ-w3K"/>
+                        <outlet property="userImageiew" destination="b8u-8d-bUm" id="jLP-vQ-hKd"/>
                         <outlet property="weightLbl" destination="JhX-sg-FWb" id="dl7-xw-FQx"/>
+                        <segue destination="tYp-FQ-Qcx" kind="show" identifier="tochatSegue" id="kSG-Gx-yw8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvf-PM-Jmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1884" y="-603.14842578710648"/>
+        </scene>
+        <!--toChat-->
+        <scene sceneID="YbL-Lv-QAO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" referencedIdentifier="toChat" id="tYp-FQ-Qcx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nuw-qD-dZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2562" y="-669"/>
         </scene>
         <!--Donor-->
         <scene sceneID="ems-v4-77n">
